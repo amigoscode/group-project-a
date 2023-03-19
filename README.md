@@ -45,6 +45,10 @@ The classes in the **Servlet layer** communicate with the outside world **(the c
 ## Database:
 The Budget Tracker application uses a database to store user, wallet, and transaction information. The ConnectionManager class provides a connection to the database.
 
+### Database Design: 
+
+![Database Design](https://github.com/amigoscode/group-project-a/blob/feature/GPA-01/Database%20Design.jpg)
+
 ## Exception Handling:
 The ExceptionMessage class handles exceptions and sends proper messages to the client.
 
