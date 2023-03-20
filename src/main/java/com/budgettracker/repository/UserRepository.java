@@ -1,4 +1,4 @@
-package repository;
+package com.budgettracker.repository;
 
-public class UsersDao {
+public interface UserRepository {
 }

@@ -1,4 +1,4 @@
-package util;
+package com.budgettracker.util;
 
 public class ServletUtil {
 }

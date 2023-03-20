@@ -1,2 +1,4 @@
-package com.budgettracker.db;public class DatabaseClass {
+package com.budgettracker.db;
+
+public class DatabaseClass {
 }

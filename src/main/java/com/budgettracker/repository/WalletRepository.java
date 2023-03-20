@@ -1,4 +1,4 @@
-package repository;
+package com.budgettracker.repository;
 
-public class WalletsDao {
+public interface WalletRepository {
 }

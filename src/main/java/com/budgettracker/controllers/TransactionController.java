@@ -1,4 +1,4 @@
-package controllers;
+package com.budgettracker.controllers;
 
-public class TransactionsServlet {
+public class TransactionController {
 }

@@ -1,2 +1,4 @@
-package com.budgettracker.config;public class UserConfig {
+package com.budgettracker.config;
+
+public class UserConfig {
 }

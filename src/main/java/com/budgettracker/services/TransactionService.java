@@ -1,4 +1,4 @@
-package services;
+package com.budgettracker.services;
 
-public class TransactionsService {
+public interface TransactionService {
 }

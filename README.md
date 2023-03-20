@@ -1,56 +1,107 @@
-# Introduction: 
-The Budget Tracker is a simple application that assists users in monitoring their finances.
-Each user has their own wallet that keeps track of their transactions.
-The application permits users to make deposits and withdrawals. 
+Table of contents
+=================
+- [Table of contents](#table-of-contents)
+  - [Overview](#overview-a-nameoverview-a)
+  - [Installation](#installation-a-nameinstallation-a)
+    - [Requirements](#requirements-a-namerequirements-a)
+    - [Usage](#usage-a-nameusage-a)
+  - [Repo-Content](#repo-content-a-namerepo-content-a)
+    - [.github](#--github-a-namegithub-a)
+    - [design](#--design-a-namedesign-a)
+      - [database](#--database)
+      - [infrastructure](#--infrastructure)
+    - [docs](#--docs-a-namedocs-a)
+    - [scripts](#--scripts-a-namescripts-a)
+    - [src](#--src-a-namesrc-a)
+      - [src/main](#--srcmain-a-namesrcmain-a)
+      - [src/main](#--srctest-a-namesrctest-a)
+  - [Contribution](#contribution-a-namerepo-content-a)
+    - [Branching-Strategy](#--branching-strategy-a-namebranching-strategy-a)
+    - [Peer-Contribution](#peer-contribution)
+  - [Credit](#--credit-a-namecredit-a)
 
-## Layers in the Project:
-The Budget Tracker project has three primary logical layers: the Servlet layer, the Service layer, and the DAO layer.
-Each layer is responsible for its own tasks and communicates with the other layers according to a predetermined set of rules. 
 
-## Servlet Layer:
-The Servlet layer handles incoming client requests and includes the following classes: 
-* **UsersServlet:** Handles requests related to users.
-* **WalletServlet:** Handles requests related to wallets.
-* **TransactionsServlet:** Handles requests related to transactions.
 
-## Service Layer:
-The Service layer includes the following classes, which provide the business logic for modifying data in memory: 
-* **UsersService:** Handles user manipulation.
-* **WalletService:** Handles wallet manipulation.
-* **TransactionsService:** Handles transaction manipulation.
+## Overview <a name="overview"></a>
 
-## DAO Layer:
-The DAO layer consists of the following classes and contains the database communication logic: 
-* **UsersDAO:** Communicates with the database for user manipulation.
-* **WalletsDAO:** Communicates with the database for wallet manipulation.
-* **TransactionsDAO:** Communicates with the database for transaction manipulation.
+Repository /amigoscode/group-project-a Contains directories and files which are need in the Budget Tracker App for:
 
-## Entities:
-In addition to the above layers, the project also includes the following entity classes:
+1. Configuration of the deployment server and CI/CD workflows
+2. Front-end part of the application
+3. Backend API files of the application
 
-* **User:** Represents a single user.
-* **Wallet:** Represents a single wallet.
-* **Transaction:** Represents a single transaction.
+## Installation <a name="Installation"></a>
+### Requirements <a name="requirements"></a>
+1. Java 17
+2. Maven
+3. Springboot V3
+4. PostgreSQL
+5. Angular
+6. Node.js
 
-## Utilities:
-The Budget Tracker project also includes the following utility classes:
-* **ConnectionManager:** Provides a connection to the database.
-* **ExceptionMessage:** Handles exceptions and sends proper messages to the client.
-* **ResponseMessage:** Sends proper response messages to the client.
-* **ServletUtil:** Provides widely-used methods for the servlet layer.
+### Usage <a name="usage"></a>
+#### Local <a name="local"></a>.
+1. Clone the repository in to your local computer
 
-## Class Relationships:
-The classes in the **Servlet layer** communicate with the outside world **(the client)** and the **Service layer**. The **Servlet layer** classes do not communicate directly with the **DAO layer**. The **Service layer** communicates with both the **Servlet layer** and the **DAO layer**. The **DAO layer** communicates with the database and the **Service layer**. The entity classes do not communicate with any other classes.
+#### Online <a name="online"></a>
+1. Head over to your browser and follow the link : 
 
-## Database:
-The Budget Tracker application uses a database to store user, wallet, and transaction information. The ConnectionManager class provides a connection to the database.
+## Repo-Content <a name="repo-content"></a>
+### - .github <a name=".github"></a>
 
-### Database Design: 
+### - design <a name="design"></a>
+#### - database
+#### - infrastructure
 
-![Database Design](https://github.com/amigoscode/group-project-a/blob/feature/GPA-01/Database%20Design.jpg)
+### - docs <a name="docs"></a>
 
-## Exception Handling:
-The ExceptionMessage class handles exceptions and sends proper messages to the client.
+### - scripts <a name="scripts"></a>
 
-## Conclusion:
-The Budget Tracker project is a simple application that helps users keep track of their finances. The project includes three main logical layers, entity classes, and utility classes. The project uses a database for data storage and the ConnectionManager class provides a connection to the database. The ExceptionMessage class handles exceptions and sends proper messages to the client.
+### - src <a name="src"></a>
+#### - src/main <a name="src/main"></a>
+##### - config <a name="config"></a>
+##### - controllers <a name="controllers"></a>
+##### - db <a name="db"></a>
+##### - dto <a name="dto"></a>
+##### - email <a name="email"></a>
+##### - exceptions <a name="exceptions"></a>
+##### - models <a name="models"></a>
+##### - repository <a name="repository"></a>
+##### - services <a name="services"></a>
+##### - shared <a name="shared"></a>
+##### - utils <a name="utils"></a>
+##### - BudgetTracker <a name="budget-tracker-class"></a>
+
+#### - src/test <a name="src/test"></a>
+
+### - LICENCE <a name="licence"></a>
+
+### - pom.xml <a name="pom-xml"></a>
+
+### - README.md <a name="readme-md"></a>
+
+## - Contribution <a name="repo-content"></a>
+### - Branching-Strategy <a name="branching-strategy"></a>
+
+The project is composed of Three main branches:
+- `main` : The production branch
+- `release` : Branch for every release of the products
+- `develop` : Development branch for contribution and consolidation before release
+
+There a re side branches used for adding features and linked to issues in the backlog (feature/GPA-01).
+The naming convention of the branches is based on the project name Goup A and the issue number. 
+For example feature/GPA-01 branch, we refer to:
+* GPA: Group A
+* 01: Issue number
+
+### - Peer-Contribution <a name="peer-contribution"></a>
+For any external contribution and collaboration on the project, you need to proceed as follows:
+ - Clone/fork the repository
+ - Create a branch after your changes (`feature/GPA-05-support`)
+ - Pull latest changes from the `develop` branch on master repo
+ - Commit your changes and open a pull request on the `develop` branch
+
+## - Credit <a name="credit"></a>
+- Ahmed BURALE catabilar@gmail.com
+- Andreas MOUZONG andreasmouzong@gmail.com
+

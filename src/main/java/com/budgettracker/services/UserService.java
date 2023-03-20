@@ -1,4 +1,4 @@
 package com.budgettracker.services;
 
-public class UsersService {
+public interface UserService {
 }

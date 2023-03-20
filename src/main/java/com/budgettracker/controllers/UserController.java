@@ -1,4 +1,4 @@
-package controllers;
+package com.budgettracker.controllers;
 
-public class UsersServlet {
+public class UserController {
 }
