@@ -25,7 +25,7 @@ with Google Auth and MFA (using One Time Password).
 The Budget Tracker application uses a database to store user, wallet, and transaction information. The ConnectionManager class provides a connection to the database.
 
 ## Database:
-![Database Design.jpg](..%2Fdesign%2Fdatabase%2FDatabase%20Design.jpg)
+![database-design-v-1.1.png](..%2Fdesign%2Fdatabase%2Fdatabase-design-v-1.1.png)
 
 ## Flow-Design <a name="flow-design"></a>
 
@@ -46,7 +46,6 @@ Each layer is responsible for its own tasks and communicates with the other laye
 
 ## Exception-Handling <a name="exception-handling"></a>
 The Exception package contain classes which handle exceptions and send proper messages to the client.
-
 
 ### Infrastructure <a name="infrastructure"></a>
 
