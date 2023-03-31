@@ -31,35 +31,35 @@ The Budget Tracker application uses a database to store user, wallet, and transa
 
 The brief overall flow of how the Budget Tracker application can be expressed as follows:
 
-User Registration: A new user creates an account by providing their personal information, including their name, email, and password. 
+`User Registration:` A new user creates an account by providing their personal information, including their name, email, and password. 
 The authentication information is stored in the Authentication table, and the user information is stored in the User table.
 
 Login: A user logs into the application using their email and password. 
 The system checks the authentication information stored in the Session table and grants access to the user if the login credentials are correct.
 
-Multifactor Authentication (MFA): After a user logs in, they can choose to enable multifactor authentication for additional security. 
+`Multifactor Authentication (MFA):` After a user logs in, they can choose to enable multifactor authentication for additional security. 
 The system generates a secret key and stores it in the Authentication table. 
 The user can use this key to configure a third-party authenticator app and complete the setup process.
 
-Google Authentication: Alternatively, a user can also choose to enable Google authentication, which uses the user's Google account for authentication. 
+`Google Authentication:` Alternatively, a user can also choose to enable Google authentication, which uses the user's Google account for authentication. 
 The system generates a unique identifier for the user's Google account and stores it in the Authentication table.
 
-Wallet Creation: After logging in, a user creates a new wallet to keep track of their finances. 
+`Wallet Creation:` After logging in, a user creates a new wallet to keep track of their finances. 
 The system creates a new record in the Wallet table and associates it with the user's user_id.
 
-Transaction Logging: The user logs their transactions by creating new records in the Transaction table. 
+`Transaction Logging:` The user logs their transactions by creating new records in the Transaction table. 
 Each transaction is associated with the user's wallet and can include details such as the amount, description, and category.
 
-Budget Creation: The user can create a new budget to set spending goals for specific categories. 
+`Budget Creation:` The user can create a new budget to set spending goals for specific categories. 
 The system creates a new record in the Budget table and associates it with the user's user_id.
 
-Budget Category Association: The user can associate each budget with one or more categories by creating records in the Budget_Category table. 
+`Budget Category Association:` The user can associate each budget with one or more categories by creating records in the Budget_Category table. 
 Each record specifies the budget_id and the category_id.
 
-Notification Generation: The system generates notifications for each transaction and budget-related event by creating records in the Notification table. 
+`Notification Generation:` The system generates notifications for each transaction and budget-related event by creating records in the Notification table. 
 Each notification is associated with the user's user_id and includes details such as the transaction amount and the budget status.
 
-## Use-Cases <a name="use-cases"></a>
+## Use-Cases <a name="use-cases"></a> 
 
 ## Architecture <a name="architecture"></a>
 
